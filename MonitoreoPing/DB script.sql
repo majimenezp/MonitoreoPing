@@ -1,0 +1,15 @@
+/****** Object:  Table [dbo].[LogPing]    Script Date: 01/01/2011 16:34:01 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[LogPing](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Host] [nvarchar](100) NOT NULL,
+	[Respuesta] [bit] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_LogPing] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
